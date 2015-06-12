@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml/1" type="AnchorPane" pickOnBounds="false">
+	<children>
+		<Label fx:id="badge" AnchorPane.bottomAnchor="-50" AnchorPane.rightAnchor="20" styleClass="badge" translateY="50">
+			<font>
+            	<Font size="16.0" />
+         	</font>
+         </Label>
+	</children>
+</fx:root>
+

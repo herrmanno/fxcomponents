@@ -1,0 +1,7 @@
+.badge {
+	-fx-background-color: #0008;
+	-fx-text-fill: #eee;
+	-fx-background-radius: 3;
+	-fx-padding: 2 5 2 5;
+	-fx-max-width: 200;
+}
