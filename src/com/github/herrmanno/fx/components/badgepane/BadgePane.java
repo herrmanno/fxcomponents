@@ -1,18 +1,16 @@
 package com.github.herrmanno.fx.components.badgepane;
 
-import java.io.IOException;
-
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
+
+import com.github.herrmanno.fx.components.Helper;
 
 public class BadgePane extends AnchorPane {
 
@@ -21,17 +19,7 @@ public class BadgePane extends AnchorPane {
 	@FXML private Label badge;
 	
 	public BadgePane() {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("BadgePane.fxml"));
-		loader.setRoot(this);
-		loader.setController(this);
-		
-		getStylesheets().add(getClass().getResource("BadgePane.css").toExternalForm());
-		
-		try {
-			loader.load();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Helper.load(this);
 	}
 
 	public Label getBadge() {
